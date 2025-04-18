@@ -85,7 +85,9 @@ Red Hat OpenShift の実績ある仮想化機能を提供し、仮想マシン (
 
 次の表は、各サブスクリプションで利用できる機能について説明しており、お客様の環境に最適な OpenShift のバージョンを決定する際に役立つでしょう。
 
-image::2025_spring/index/00_openshift_comparison_chart.png[link=self, window=blank, width=100%]
+image::2025_spring/index/01_openshift_comparison_chart.png[link=self, window=blank, width=100%]
+
+OpenShiftのエディション毎の機能の内訳は、 https://www.redhat.com/en/resources/self-managed-openshift-subscription-guide#section-13[サブスクリプション・ガイド^] で確認可能です。
 
 == 次の手順
 
