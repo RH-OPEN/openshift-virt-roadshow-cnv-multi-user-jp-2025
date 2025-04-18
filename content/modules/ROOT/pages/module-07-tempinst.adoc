@@ -135,7 +135,7 @@ image::2025_spring/module-07-tempinst/17_Windows_2k19_Dialog.png[link=self, wind
 . ダイアログで以下を入力します：
 * *win-sysprep* という名前を指定します。
 * *Boot from CD* のチェックボックスをオンにします。
-* ドロップダウンメニューから *(creates PVC)* URLを選択します。
+* ドロップダウンメニューから *URL (creates PVC)* を選択します。
 * *image URL* を指定します : https://catalog-item-assets.s3.us-east-2.amazonaws.com/qcow_images/Windows2019.iso
 * CDディスクのサイズを *5 GiB* に縮小します。
 * *Disk source* は *Blank* のままにし、サイズはデフォルト値の *60 GiB* に設定します
