@@ -156,6 +156,7 @@ image::2025_spring/module-05-bcdr/12_Create_Restore_YAML.png[link=self, window=b
 image::2025_spring/module-05-bcdr/13_Restore_Completed.png[link=self, window=blank, width=100%]
 
 . *Virtualization* に戻り、左側のメニューで *Virtual Machines* をクリックし、 *fedora02* 仮想マシンが復元されたことを確認します（*vmexamples-{user}* プロジェクト内）。 *Created* の値が直前の時間であることが分かります。
++
 image::2025_spring/module-05-bcdr/14_VM_Restored.png[link=self, window=blank, width=100%]
 
 == まとめ
