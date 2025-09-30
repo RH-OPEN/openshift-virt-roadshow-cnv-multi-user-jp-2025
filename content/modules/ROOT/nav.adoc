@@ -13,6 +13,8 @@
 * xref:module-02-mtv.adoc[既存の仮想マシンの移行]
 ** xref:module-02-mtv.adoc#prerequisites[移行の前提条件]
 ** xref:module-02-mtv.adoc#migrating_vms[VMware からの仮想マシンの移行]
+** xref:module-02-mtv.adoc#interactive_demos[高度な機能のインタラクティブなデモ]
+** xref:module-02-mtv.adoc#migration_wrapup[移行のラップアップ]
 
 * xref:module-04-storage.adoc[ストレージ管理]
 ** xref:module-04-storage.adoc#examine_pvc[VM の PVC を確認する]
