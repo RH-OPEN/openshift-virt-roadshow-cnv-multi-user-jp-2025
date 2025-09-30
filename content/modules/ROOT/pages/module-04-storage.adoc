@@ -28,7 +28,7 @@ image::2025_spring/module-04-storage/01_PVC_List.png[link=self, window=blank, wi
 
 . *fedora01* PVCをクリックすると、VMをバックアップするストレージボリュームに関する追加の詳細情報が表示されます。
 +
-. 永続ボリュームの主張に関する以下の情報に注目してください:
+. PVCに関する以下の情報に注目してください:
 .. PVCは現在、正常にバインドされています
 .. PVCは30GiBの容量とサイズを要求しています
 .. PVCのアクセスモードはReadWriteMany (RWX) です
@@ -67,7 +67,7 @@ image::2025_spring/module-04-storage/04_Snapshots_Overview.png[link=self, window
 +
 image::2025_spring/module-04-storage/05_Snapshot_Menu.png[link=self, window=blank, width=100%]
 
-. *スナップショットの取得* をクリックすると、ダイアログが開きます。
+. *Take snapshot* をクリックすると、ダイアログが開きます。
 +
 image::2025_spring/module-04-storage/06_VM_Snapshot_Dialog.png[link=self, window=blank, width=100%]
 +
@@ -77,7 +77,7 @@ NOTE: *cloudinitdisk* がスナップショットに含まれないという警�
 +
 image::2025_spring/module-04-storage/07_VM_Snapshot_Taken.png[link=self, window=blank, width=100%]
 
-. 3点のドットメニューをクリックし、VMが現在実行中であるため、*Restore* オプションがグレー表示されていることを確認します。
+. 3点のドットメニューをクリックします。VMが現在実行中であるため、*Restore* オプションがグレーアウトされていることを確認します。
 +
 image::2025_spring/module-04-storage/08_VM_Restore_Disabled.png[link=self, window=blank, width=100%]
 

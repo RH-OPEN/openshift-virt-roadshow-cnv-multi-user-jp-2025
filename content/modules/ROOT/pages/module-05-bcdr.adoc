@@ -28,17 +28,17 @@ NOTE:  これは、サポート対象のバックアップおよびリカバリ�
 
 . Administrator パースペクティブに移動し、左側のメニューで *Operators*、*Installed Operators* の順にクリックします。 プロジェクト *oadp-{user}* が選択されていることを確認します。 *OADP* と入力します 
 +
-image::2025_spring/module-05-bcdr/00_Left_Menu.png[link=self, window=blank, width=100%]
+image::2025_summer/module-05-bcdr/00_Left_Menu.png[link=self, window=blank, width=100%]
 
 . Operatorをクリックして詳細を表示します。
 
 . 利用可能な *Provided APIs* を確認します。 このモジュールでは、 *Backup* および *Restore* 機能を使用します。
 +
-image::2025_spring/module-05-bcdr/01_Overview.png[link=self, window=blank, width=100%]
+image::2025_summer/module-05-bcdr/01_Overview.png[link=self, window=blank, width=100%]
 
 . 上部にある水平スクロールバーを使用して、*DataProtectionApplication* タブに移動します。 このオブジェクトは、デプロイされた OADP インスタンスの構成を表します。
 +
-image::2025_spring/module-05-bcdr/02_DPA.png[link=self, window=blank, width=100%]
+image::2025_summer/module-05-bcdr/02_DPA.png[link=self, window=blank, width=100%]
 
 . *oadp-dpa* をクリックして _DataProtectionApplication_ の詳細を表示し、次に上部にある *YAML* ボタンをクリックして、設定方法を確認します。
 +
@@ -57,7 +57,7 @@ IMPORTANT:  便宜上、このラボではローカルのオブジェクトバ�
 
 . *Backup* タブをクリックし、*Create Backup* ボタンをクリックします。
 +
-image::2025_spring/module-05-bcdr/04_Backup_Tab.png[link=self, window=blank, width=100%]
+image::2025_summer/module-05-bcdr/04_Backup_Tab.png[link=self, window=blank, width=100%]
 
 . _YAMLビュー_ に切り替え、デフォルトのコンテンツを以下のものに置き換えます。
 +
@@ -90,7 +90,7 @@ spec:
 
 . 一番下の *Create* ボタンをクリックします。
 +
-. このYAMLの内容は、*vmexamples-{user}* ネームスペース内の *app: fedora02* ラベルを持つオブジェクトが、*DataProtectionApplication* 構成で指定された場所にバックアップされることを示しています。
+このYAMLの内容は、*vmexamples-{user}* ネームスペース内の *app: fedora02* ラベルを持つオブジェクトが、*DataProtectionApplication* 構成で指定された場所にバックアップされることを示しています。
 +
 image::2025_spring/module-05-bcdr/05_Create_Backup_YAML.png[link=self, window=blank, width=100%]
 +
@@ -98,7 +98,7 @@ NOTE: 前のセクションを完了しておらず、*fedora02* VM がない場
 
 . ステータス列が *Completed* に変わるまで待ちます。これにより、仮想マシンが正常にバックアップされたことが示されます。
 +
-image::2025_spring/module-05-bcdr/06_Backup_Completed.png[link=self, window=blank, width=100%]
+image::2025_summer/module-05-bcdr/06_Backup_Completed.png[link=self, window=blank, width=100%]
 
 [[restore_backup]]
 == バックアップからの復元
@@ -123,7 +123,7 @@ image::2025_spring/module-05-bcdr/10_Deleted_VM.png[link=self, window=blank, wid
 
 . 横方向のナビゲーションバーを使用して *Restore* タブを見つけ、*Restore* タブをクリックし、*Create Restore* を押します。
 +
-image::2025_spring/module-05-bcdr/11_Restore_Tab.png[link=self, window=blank, width=100%]
+image::2025_summer/module-05-bcdr/11_Restore_Tab.png[link=self, window=blank, width=100%]
 
 . YAML ビューに切り替え、コンテンツを以下のものに置き換えます:
 +
@@ -153,7 +153,7 @@ image::2025_spring/module-05-bcdr/12_Create_Restore_YAML.png[link=self, window=b
 
 . *Status* 列が *Completed* に変わったら完了です。
 +
-image::2025_spring/module-05-bcdr/13_Restore_Completed.png[link=self, window=blank, width=100%]
+image::2025_summer/module-05-bcdr/13_Restore_Completed.png[link=self, window=blank, width=100%]
 
 . *Virtualization* に戻り、左側のメニューで *Virtual Machines* をクリックし、 *fedora02* 仮想マシンが復元されたことを確認します（*vmexamples-{user}* プロジェクト内）。 *Created* の値が直前の時間であることが分かります。
 +

@@ -62,13 +62,15 @@ vSphereのリソース（データストアやポートグループなど）をO
 - *User:* {vcenter_full_user}
 - *Password:* {vcenter_password}
 
-. デフォルトでは、ナビゲーションツリーの一番上に *インベントリ* ビューが表示され、このオブジェクトを表示する権限がないというメッセージが表示されます。これは現在のユーザーアカウントでは想定される動作です。
+. デフォルトでは、ナビゲーションツリーの一番上に *インベントリ* ビューが表示され、このオブジェクトを表示する権限がないというメッセージが表示されます。これは現在のユーザーアカウントでは想定通りの動作です。
 +
 image::2025_spring/module-02-mtv/00_VMware_First_Login.png[link=self, window=blank, width=100%]
 
-. *Roadshow* という名前のフォルダと、その下に 4 つの VM があるまで、*Workloads* アイコンをクリックしてナビゲーションツリーを展開します。
+. *Workloads* アイコンをクリックし、ナビゲーションツリーを展開して *Roadshow* という名前のフォルダとその下の4つのVMを表示します。
 +
 image::2025_spring/module-02-mtv/01_Workload_VM_List.png[link=self, window=blank, width=100%]
+
+NOTE: ラボ環境の正確なフォルダリストはここに示す画像とは異なる場合がありますが、Roadshowフォルダと対象のVMが見つかれば、ラボを続行できます。
 
 . フォルダ内の各仮想マシンの詳細を表示するには、画面上部の *VMs* アイコンをクリックします。
 +
@@ -86,7 +88,7 @@ image::2025_spring/module-02-mtv/04_vSphere_Datastore.png[link=self, window=blan
 
 VMware vSphereとそこに存在する仮想マシンの確認が完了したので、ウィンドウを閉じてOpenShift Webコンソールに戻ります。
 
-NOTE: *Migration Toolkit for Virtualization (MTV)* は公式にはOpenShift Virtualizationとは別のツールであり、*Virtualization* ペルソナからはアクセスできません。 
+NOTE: *Migration Toolkit for Virtualization (MTV)* は公式にはOpenShift Virtualizationとは別のツールであり、*Virtualization* パースペクティブからはアクセスできません。 
 
 . 左側のメニューで *Virtualization* をクリックし、ドロップダウンから *Administrator* を選択します。
 +

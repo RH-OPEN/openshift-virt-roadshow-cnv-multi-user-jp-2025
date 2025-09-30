@@ -84,11 +84,10 @@ IMPORTANT: Network Attachment Definitionを作成する際には、vmexamples-{u
 
 . *vmexamples-{user}* プロジェクト用のフォームを以下のように入力し、*Create Network Attachment Definition* をクリックします。
 * *Name*: flatnetwork
-* *Description*: CNV Linux Bridge
 * *Network Type*: Linux Bridge
 * *Bridge name*: br-flat
 +
-image::2025_spring/module-09-networking/07_NetworkAttachDefinition_Create_Form.png[link=self, window=blank, width=100%]
+image::2025_summer/module-09-networking/07_NetworkAttachDefinition_Create_Form.png[link=self, window=blank, width=100%]
 +
 
 NOTE: 上記のフォームには、VLAN タグ番号を入力するフィールドがあります。これは、VLAN タグの割り当てが必要なネットワークに接続する場合に使用します。このラボでは、タグなしネットワークを使用しているため、VLAN 番号は必要ありません。
@@ -99,7 +98,7 @@ NOTE: ホスト上の単一のLinuxブリッジには、多くの異なるVLAN�
 
 . Network Attachment Definitionの詳細を確認します。これは *vmexamples-{user}* プロジェクトで作成されたため、他のプロジェクトでは利用できません。
 +
-image::2025_spring/module-09-networking/08_NetworkAttachDefinition_Created.png[link=self, window=blank, width=100%]
+image::2025_summer/module-09-networking/08_NetworkAttachDefinition_Created.png[link=self, window=blank, width=100%]
 
 [[attach]]
 == 仮想マシンをネットワークに接続
@@ -117,7 +116,7 @@ NOTE: これは外部ネットワークに接続するブリッジであるた�
 +
 image::2025_spring/module-09-networking/11_VM_Network_Startup.png[]
 +
-. *enp2s0* インターフェースは、フラットネットワーク（*192.168.64.0/18*）からIPアドレスを取得します。そのネットワークには、そのネットワークにIPを割り当てるDHCPサーバーがあります。 
+*enp2s0* インターフェースは、*flatnetwork*（*192.168.64.0/18*）からIPアドレスを取得します。このネットワークには、IPアドレスを提供するDHCPサーバーが存在します。
 +
 image::2025_spring/module-09-networking/12_VM_Network_Console.png[link=self, window=blank, width=100%]
 
@@ -192,7 +191,7 @@ image::2025_spring/module-09-networking/17_UDN_Created.png[link=self, window=bla
 * フォームを使用して作成した場合のデフォルト名は *primary-udn* です。
 * デフォルトではレイヤー2です（現時点でOpenShift仮想化でサポートされている唯一のレイヤー）。
 * 役割はプライマリです（仮想マシンは現時点ではプライマリネットワークのみを使用できます）。
-* Network Attachment Definitionは自動的に作成されます。
+* Network Attachment Definitionが自動的に作成されます。
 
 . 次に、左側のメニューで *NetworkAttachmentDefinitions* に移動し、関連するNADが自動的に作成されていることを確認します。
 +
